@@ -42,7 +42,7 @@ export const constructCommand = (filePath: string, args: IOptions) => {
 }
 
 const constructOptionsFlags = (args: IOptions) => {
-	let flag = ''
+	let flag = '-ojson'
 	if (args?.whisperOptions?.outputInText) {
 		flag += `-otxt `
 	}
